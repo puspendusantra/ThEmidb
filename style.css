@@ -145,5 +145,4 @@ header .nav li:last-child {
     transition: ease-in-out 0.3s;
     outline: none;
     font-size: 1rem;
-    box-shadow: inset 100px 0 0 0 0 #f9e506;
 }
