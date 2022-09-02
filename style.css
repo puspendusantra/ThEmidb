@@ -139,12 +139,12 @@ header .nav li:last-child {
 color: #fff;
 border: 3px solid rgb(241, 239, 239);
 text-align: center;
-font-size: 17px;
+font-size: 25px;
 background-color : rgba(0, 0, 0, 0.5);
 padding: 10px;
 outline: none;
 border-radius: 15px;
-width: fit-content;
+
 }
 
 .nav button  {
