@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body bgcolor=#313131>
+<body bgcolor=#313131 oncontextmenu="return false">
     <font face="arial" color="white">
     <h1 align="center">If Page Does's Work,So Refresh...
     </h1></font>
@@ -16,4 +16,23 @@
     <font face="Sans-serif" color="white"><h3 align="center">© ThEmidb 2022</h3></font>
 </footer>
 </body>
+    <script> 
+        document.onkeydown = (e) => {
+    if (e.key == 123) {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.shiftKey && e.key == 'I') {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.shiftKey && e.key == 'C') {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.shiftKey && e.key == 'J') {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.key == 'U') {
+        e.preventDefault();
+    }
+};
+    </script>
 </html>
