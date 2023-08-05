@@ -11,7 +11,7 @@
 	<link rel="shortcut icon" type="x-icon" href="LOGO.png">
     <link rel="stylesheet" href="style.css">    
 </head>
-<body>
+<body oncontextmenu="return false">
 
     <header>
 		<img src="LOGO.png" alt="logo" align="top" width="10%"> 
@@ -71,4 +71,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 
 </body>
+	<script>
+		document.onkeydown = (e) => {
+    if (e.key == 123) {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.shiftKey && e.key == 'I') {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.shiftKey && e.key == 'C') {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.shiftKey && e.key == 'J') {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.key == 'U') {
+        e.preventDefault();
+    }
+};
+  </script>
 </html>
