@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	
 }
 body {
 	font-family: nexa;
@@ -252,3 +252,46 @@ color: rgb(255, 255, 255);
 		border-color: #282d32;
 		border-radius: 20px;
   }
+  .btn {
+	background-color: #19931900;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-color: #fff;
+  padding: 10px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 1px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 10px;
+  
+  }
+  .btn :hover {
+	background-color: #223094;
+	
+  }
+  .world-cup {
+	margin-top: 25px;
+  }
+  .link {
+	background-color: #19931903;
+	color: rgb(255, 255, 255);
+	padding: 15px 25px;
+	text-decoration: none;
+	border-radius: 20px;
+	padding: 10px;
+	border-style: solid;
+	border-color: #070707;
+  }
+  
+  .link:hover {
+	background-color: #ffffffa3;
+	color: #00000092;
+	border-style: solid;
+	border-color: #fffffffc;
+	
+  }
+  

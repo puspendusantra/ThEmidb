@@ -5,33 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IPL 2023</title>
+    <title>World Cup 2023</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 	<link rel="shortcut icon" type="x-icon" href="LOGO.png">
     <link rel="stylesheet" href="style.css">    
 </head>
-<body>
+<body oncontextmenu="return false">
 
     <header>
 		<img src="LOGO.png" alt="logo" align="top" width="10%"> 
 		<ul class="nav">  
-			<li ><button><a href="https://puspendusantra.github.io/themidb.github.io/">Home</a></button></li>
-			<li><button><a href="aboutus.html">About</a></button></li> 
-			<li><button><a href="puspendusantra30@gmail.com">Contact</a></button></li> 
+			<li ><a class="btn" href="https://puspendusantra.github.io/themidb.github.io/">Home</a></li>
+			<li><a class="btn" href="aboutus.html">About</a></li> 
+			<li><address><a class="btn" href="mailto:puspendusantra30@gmail.com">Contact Us</a></address></li> 
 		</ul>
 	</header>
 	
 		
 	<section class="box">  
 		<video src="video.mp4" autoplay muted loop></video>
-		<h1>World Cup 2022 Live</h1> 
-		<h2 id="h1"><h2><button><a href="https://iplhd2.ga//">Hindi Live 1</a></button>
-            <span style="padding-left: 40px;" style="margin-right: 100px;"></span><button><a href="hlink2.html">Hindi Live 2</a></button></h2></h2>
-        <h2><button class="elink1"><a href="elink1.html">English Live 1</a></button>
-            <span style="padding-left: 40px;"></span><button><a href="elink2.html">English Live 2</a></button></h2>
+		<h1 class="world-cup">World Cup 2023 Live</h1> 
+		<h2><h2><a id="" class="link" id="h1" href="hlink1.html">Hindi Live 1</a>
+
+            <span style="padding-left: 40px;" style="margin-right: 100px;"></span><a id="h2" class="link" href="hlink2.html">Hindi Live 2</a></h2></h2>
+        
+            <h2><a id="e1" class="link" href="elink1.html">English Live 1</a>
+            
+                <span style="padding-left: 40px;"></span><a id="e2" class="link" href="elink2.html">English Live 2</a></button></h2>
 		<font face="arial" color="white">
-		<h2 align="center"><button><a href="musterbutton.html">Musterbuton</a></button></h2></font>		
+		
+            <h2 align="center"><a class="link"  href="musterbutton.html">Musterbuton</a></h2></font>		
 		<!---<a href="#" class="boxBtn">Contact Us</a>  --> 
 	</section>
 	
@@ -71,6 +75,24 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-
+<script>
+    document.onkeydown = (e) => {
+    if (e.key == 123) {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.shiftKey && e.key == 'I') {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.shiftKey && e.key == 'C') {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.shiftKey && e.key == 'J') {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.key == 'U') {
+        e.preventDefault();
+    }
+};
+</script>
 </body>
 </html>
