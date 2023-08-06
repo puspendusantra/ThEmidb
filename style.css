@@ -248,4 +248,7 @@ color: rgb(255, 255, 255);
 	font-size:13px;
 	margin-bottom:0;
   }
-  
+  #h1 {
+		border-color: #282d32;
+		border-radius: 20px;
+  }
