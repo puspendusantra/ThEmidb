@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>Website Counter</title>
+    <style>
+      body,
+      .website-counter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      body {
+        height: 100vh;
+        background-color: black;
+      }
+
+      /* Styles for website counter container */
+      .website-counter {
+        background-color: #ff4957;
+        height: 50px;
+        width: 80px;
+        color: white;
+        border-radius: 30px;
+        font-weight: 700;
+        font-size: 25px;
+        margin-top: 10px;
+      }
+
+      /* Styles for reset button */
+      #reset {
+        margin-top: 20px;
+        background-color: #008cba;
+        cursor: pointer;
+        font-size: 18px;
+        padding: 8px 20px;
+        color: white;
+        border: 0;
+      }
+      .reset-button {
+        background-color: #f5f5f5; /* Button background color */
+        color: rgb(26, 26, 26); /* Text color */
+        font-size: 18px; /* Font size */
+        padding: 10px 20px; /* Padding for button size */
+        border: none; /* Remove button border */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Change cursor on hover */
+        outline: none; /* Remove the button's outline on focus */
+      }
+
+      .reset-button:hover {
+        background-color: #b8bcc0; /* Button background color on hover */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <p style="color: white; font-size: 20px">Total Visiter Count :</p>
+    </div>
+    <div class="website-counter"></div>
+    <!---<button id="reset">Reset</button>-->
+  </body>
+  <script>
+    var counterContainer = document.querySelector(".website-counter");
+    var resetButton = document.querySelector("#reset");
+    var visitCount = localStorage.getItem("page_view");
+
+    // Check if page_view entry is present
+    if (visitCount) {
+      visitCount = Number(visitCount) + 1;
+      localStorage.setItem("page_view", visitCount);
+    } else {
+      visitCount = 1;
+      localStorage.setItem("page_view", 1);
+    }
+    counterContainer.innerHTML = visitCount;
+
+    // Adding onClick event listener
+    resetButton.addEventListener("click", () => {
+      visitCount = 1;
+      localStorage.setItem("page_view", 1);
+      counterContainer.innerHTML = visitCount;
+    });
+  </script>
+</html>
