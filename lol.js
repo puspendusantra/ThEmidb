@@ -49,7 +49,7 @@
           exitFullscreen: "Exit Fullscreen",
           fullscreen: "Fullscreen",
           hd: "Quality",
-          liveBroadcast: "Join ThEmidb",
+          liveBroadcast: "Join THEMIDB",
           logo: "Logo",
           mute: "Mute",
           next: "Next",
@@ -62,7 +62,7 @@
           playback: "Play",
           playbackRates: "Playback Rates",
           player: "Video Player",
-          poweredBy: "Join ThEmidb Now",
+          poweredBy: "Powered by",
           prev: "Previous",
           related: {
             autoplaymessage: "Next up in xx",
@@ -81,7 +81,7 @@
           slider: "Seek",
           stop: "Stop",
           unmute: "Unmute",
-          videoInfo: "Join ThEmidb",
+          videoInfo: "About ThEmidb",
           volume: "Volume",
           volumeSlider: "Volume",
           shortcuts: {
